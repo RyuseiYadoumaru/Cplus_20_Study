@@ -5,6 +5,9 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{7b709362-1561-4c83-9ff5-61d6bf7e4133}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Concept.cpp">
@@ -12,6 +15,9 @@
     </ClCompile>
     <ClCompile Include="Noexcept.cpp">
       <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_GetClassName.cpp">
+      <Filter>Test</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
