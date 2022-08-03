@@ -8,6 +8,12 @@
     <Filter Include="Test">
       <UniqueIdentifier>{7b709362-1561-4c83-9ff5-61d6bf7e4133}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Test\ComponentTest">
+      <UniqueIdentifier>{977e119d-76c5-49f3-946b-7b9ff6d08982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm">
+      <UniqueIdentifier>{f91408e5-7f28-4aba-9d11-23fb30f2ba40}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Concept.cpp">
@@ -19,5 +25,55 @@
     <ClCompile Include="Test_GetClassName.cpp">
       <Filter>Test</Filter>
     </ClCompile>
+    <ClCompile Include="FunctionPointer_1.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="delete.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="new_1.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="new_2.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="trycatch_1.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="trycatch_2.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="Lamda_1.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="Lamda_2.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="Lamda_3.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionPointer_2.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Test\ComponentTest</Filter>
+    </ClCompile>
+    <ClCompile Include="List.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Betwize.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearchTree.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Component.h">
+      <Filter>Test\ComponentTest</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentTest.h">
+      <Filter>Test\ComponentTest</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

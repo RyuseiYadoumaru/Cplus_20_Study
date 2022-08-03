@@ -21,6 +21,9 @@ enum class Enum
 	two
 };
 
+#define CLASS_NAME(CLASS) typeid(CLASS).name();
+
+
 int main()
 {
 	Foo obj_1;
@@ -34,6 +37,9 @@ int main()
 	Enum obj_3;
 	string name_enumclass = typeid(obj_3).name();
 	cout << name_enumclass << endl;
+
+	string name = CLASS_NAME(string);
+	cout << name << "\n";
 
 	return 0;
 }
