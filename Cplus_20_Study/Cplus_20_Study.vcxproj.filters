@@ -67,6 +67,9 @@
     <ClCompile Include="BinarySearchTree.cpp">
       <Filter>Algorithm</Filter>
     </ClCompile>
+    <ClCompile Include="mapTest_1.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Component.h">
