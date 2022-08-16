@@ -5,9 +5,9 @@
 #include <string>
 #include <iostream>
 
-//#define TEST_CASE_1
+#define TEST_CASE_1
 //#define TEST_CASE_2
-#define TEST_CASE_3
+//#define TEST_CASE_3
 
 /**
  * マップの登録と更新順を確認する
@@ -33,8 +33,8 @@ int main()
 	constexpr static int RegisterNum = 2;
 	for (int num = 0; num < RegisterNum; num++)
 	{
-		nameList[num] = AllNameList[num];
-		nameList_Unorederd[num] = AllNameList[num];
+		nameList[1] = AllNameList[num];
+		nameList_Unorederd[1] = AllNameList[num];
 	}
 #endif 
 

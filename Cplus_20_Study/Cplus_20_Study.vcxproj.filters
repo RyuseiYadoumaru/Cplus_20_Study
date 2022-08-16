@@ -70,6 +70,9 @@
     <ClCompile Include="mapTest_1.cpp">
       <Filter>Test</Filter>
     </ClCompile>
+    <ClCompile Include="StringView.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Component.h">
