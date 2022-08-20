@@ -73,6 +73,9 @@
     <ClCompile Include="StringView.cpp">
       <Filter>Study</Filter>
     </ClCompile>
+    <ClCompile Include="Lamda_4.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Component.h">

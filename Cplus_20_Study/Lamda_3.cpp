@@ -1,4 +1,5 @@
-#include "main.h"
+#include <iostream>
+
 
 extern "C" void f(void(*p)(void));
 void g()

@@ -1,4 +1,5 @@
-#include "main.h"
+#include <iostream>
+#include <string>
 template<class T> int f(const T& fn)
 {
 	std::cin >> a;
