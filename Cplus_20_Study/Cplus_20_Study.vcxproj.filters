@@ -85,6 +85,9 @@
     <ClCompile Include="Loadcsv_Sample.cpp">
       <Filter>Study</Filter>
     </ClCompile>
+    <ClCompile Include="ConceptTest.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Component.h">

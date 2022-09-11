@@ -31,10 +31,10 @@
 /**
  * TRUEにするとサンプルを実行してくれます.
  */
-#define LOAD_TEXT		(FALSE)
-#define INPUT_PARAM		(FALSE)
+#define LOAD_TEXT		(TRUE)
+#define INPUT_PARAM		(TRUE)
 #define PRINT_PARAM		(TRUE)
-#define OUTPUT_PARAM	(FALSE)
+#define OUTPUT_PARAM	(TRUE)
 
 
 //csvデータを読み込む順番
