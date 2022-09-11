@@ -14,6 +14,9 @@
     <Filter Include="Algorithm">
       <UniqueIdentifier>{f91408e5-7f28-4aba-9d11-23fb30f2ba40}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Algorithm\Multi-thread">
+      <UniqueIdentifier>{b1df01b8-d0c4-457c-86c4-cd1be43b2402}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Concept.cpp">
@@ -76,6 +79,12 @@
     <ClCompile Include="Lamda_4.cpp">
       <Filter>Study</Filter>
     </ClCompile>
+    <ClCompile Include="MultiThread.cpp">
+      <Filter>Algorithm\Multi-thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Loadcsv_Sample.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Component.h">
@@ -83,6 +92,9 @@
     </ClInclude>
     <ClInclude Include="ComponentTest.h">
       <Filter>Test\ComponentTest</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiThread.h">
+      <Filter>Algorithm\Multi-thread</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
