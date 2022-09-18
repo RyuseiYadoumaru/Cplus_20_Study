@@ -17,6 +17,9 @@
     <Filter Include="Algorithm\Multi-thread">
       <UniqueIdentifier>{b1df01b8-d0c4-457c-86c4-cd1be43b2402}</UniqueIdentifier>
     </Filter>
+    <Filter Include="mySample">
+      <UniqueIdentifier>{ad876b40-7979-485a-aeab-c01c5fddecbd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Concept.cpp">
@@ -82,10 +85,13 @@
     <ClCompile Include="MultiThread.cpp">
       <Filter>Algorithm\Multi-thread</Filter>
     </ClCompile>
-    <ClCompile Include="Loadcsv_Sample.cpp">
-      <Filter>Study</Filter>
-    </ClCompile>
     <ClCompile Include="ConceptTest.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Loadcsv_Sample.cpp">
+      <Filter>mySample</Filter>
+    </ClCompile>
+    <ClCompile Include="sort.cpp">
       <Filter>Test</Filter>
     </ClCompile>
   </ItemGroup>
