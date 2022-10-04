@@ -20,6 +20,9 @@
     <Filter Include="mySample">
       <UniqueIdentifier>{ad876b40-7979-485a-aeab-c01c5fddecbd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Study\StateMachine">
+      <UniqueIdentifier>{ec97a3a4-4efb-485d-ad71-47729407e612}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Concept.cpp">
@@ -94,6 +97,12 @@
     <ClCompile Include="sort.cpp">
       <Filter>Test</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Study\StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="explicit.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Component.h">
@@ -104,6 +113,12 @@
     </ClInclude>
     <ClInclude Include="MultiThread.h">
       <Filter>Algorithm\Multi-thread</Filter>
+    </ClInclude>
+    <ClInclude Include="StateBase.h">
+      <Filter>Study\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine.h">
+      <Filter>Study\StateMachine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
