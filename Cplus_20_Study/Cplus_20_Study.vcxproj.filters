@@ -20,8 +20,11 @@
     <Filter Include="mySample">
       <UniqueIdentifier>{ad876b40-7979-485a-aeab-c01c5fddecbd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Study\StateMachine">
+    <Filter Include="Algorithm\StateMachine">
       <UniqueIdentifier>{ec97a3a4-4efb-485d-ad71-47729407e612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Study\Easing">
+      <UniqueIdentifier>{949ff6f0-33bc-4498-a9a1-a5412364f971}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -98,10 +101,13 @@
       <Filter>Test</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>Study\StateMachine</Filter>
+      <Filter>Algorithm\StateMachine</Filter>
     </ClCompile>
     <ClCompile Include="explicit.cpp">
       <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="Easing.cpp">
+      <Filter>Study\Easing</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -115,10 +121,13 @@
       <Filter>Algorithm\Multi-thread</Filter>
     </ClInclude>
     <ClInclude Include="StateBase.h">
-      <Filter>Study\StateMachine</Filter>
+      <Filter>Algorithm\StateMachine</Filter>
     </ClInclude>
     <ClInclude Include="StateMachine.h">
-      <Filter>Study\StateMachine</Filter>
+      <Filter>Algorithm\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="Easing.h">
+      <Filter>Study\Easing</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
