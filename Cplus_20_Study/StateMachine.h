@@ -1,7 +1,7 @@
 //*****************************************************************************
 //* @file   Statemachine.h
 //* @brief  ステートマシーンの基底クラス
-//* @note   
+//* @note   FSM；(FiniteStateMachine) : 有限状態機械
 //* 
 //* @author YadoumaruRyusei
 //* @date   October 2022
@@ -12,34 +12,26 @@
 #include <memory>
 #include <iostream>
 
-template<class T>
+template<class FSMType>
 class StateMachine
 {
-	using StatePtr = std::shared_ptr<StateBase>;
-	using StateContainer = std::unordered_map<T, StatePtr>;
-	friend StateBase;
+protected:
+	using StatePtr = std::shared_ptr<StateBase<FSMType>>;
+	using StateType = std::string;
+	using StateContainer = std::unordered_map<StateType, StatePtr>;
 
 public:
 	StateMachine() = default;
 	~StateMachine() = default;
 
 public:
-
-	/**
-	 * 現在のステートを更新する.
-	 */
-	void Update()
-	{
-		m_currentState->Update();
-	}
-
 	/**
 	 *  ステート登録.
-	 * 
+	 *
 	 * !@param stateName : ステート
 	 * !@param state	 : ステートクラス
 	 */
-	void Register(T stateName, StatePtr state)
+	void Register(StateType stateName, StatePtr state)
 	{
 		m_stateList.insert(std::make_pair(stateName, state));
 		std::cout << "StateMachine登録\n";
@@ -47,24 +39,27 @@ public:
 
 	/**
 	 *  ステート切り替え.
-	 * 
+	 *
 	 * !@param stateName : 切り替えステート
 	 */
-	void ChangeState(T stateName)
+	void ChangeState(StateType stateName)
 	{
-		if(m_currentState != nullptr) m_currentState->ExitState();
+		if (m_stateList.count(stateName) == 0){
+			std::cout << "ステートがありません\n";
+			return;
+		}
+		if (m_currentState != nullptr) m_currentState->ExitState();
 		m_currentState = m_stateList[stateName];
 		m_currentState->EnterState();
 		std::cout << "StateMachine切り替え\n";
-
 	}
 
 	/**
 	 *  ステート削除.
-	 * 
+	 *
 	 * !@param stateName : 削除ステート
 	 */
-	void Remove(T stateName)
+	void Remove(StateType stateName)
 	{
 		auto stateItr = m_stateList.find(stateName);
 		if (stateItr == m_stateList.end()) return;
@@ -74,19 +69,40 @@ public:
 
 	/**
 	 *  ステート全削除.
-	 * 
+	 *
 	 */
 	void AllRemove()
 	{
-		std::cout << "StateMachine全削除\n";
 		m_stateList.clear();
+		std::cout << "StateMachine全削除\n";
 	}
 
 	/**
 	 * ステート取得.
 	 */
-	StatePtr GetState(T state) { return m_stateList[state]; }
+	StatePtr GetState(StateType state)
+	{
+		if (m_stateList.count(state) == 0) return nullptr;
+		return m_stateList[state]; 
+	}
 
+public:
+	// 初期化
+	virtual void Initialize() = 0;
+
+	// 更新
+	virtual void Update()
+	{
+		m_currentState->Update();
+	}
+
+	// 終了処理
+	virtual void Finalize()
+	{
+		// 全て削除する
+		AllRemove();
+	}
+	
 private:
 	StateContainer m_stateList;
 	StatePtr m_currentState = nullptr;

@@ -9,10 +9,16 @@
 #pragma once
 #include <functional>
 
+#define STATE_CLASS \
+using StateBase::StateBase;
+
+template<class FSMType>
 class StateBase
 {
+	using MachinePtr = std::shared_ptr<FSMType>;
+
 public:
-	StateBase() = default;
+	explicit StateBase(MachinePtr context) : m_context(context) {}
 	~StateBase() = default;
 
 public:
@@ -20,12 +26,6 @@ public:
 	virtual void ExitState() = 0;
 	virtual void Update() = 0;
 
-public:
-	void SetFunc(std::function<void()> test) { testFunc = test; }
-
 protected:
-	std::function<void()> testFunc;
-
-private:
-
+	MachinePtr m_context;
 };
