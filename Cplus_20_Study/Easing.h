@@ -12,49 +12,6 @@
 
 namespace myMath
 {
-	//class Vector2
-	//{
-	//public:
-	//	float x, y;
-	//};
-
-	//static inline Vector2 operator + (const Vector2& lhr, const Vector2& rhv)
-	//{
-	//	Vector2 ret;
-	//	ret.x = lhr.x + rhv.x;
-	//	ret.y = lhr.y + rhv.y;
-
-	//	return ret;
-	//}
-
-	//static inline Vector2 operator - (const Vector2& lhr, const Vector2& rhv)
-	//{
-	//	Vector2 ret;
-	//	ret.x = lhr.x - rhv.x;
-	//	ret.y = lhr.y - rhv.y;
-
-	//	return ret;
-	//}
-
-	//static inline Vector2 operator * (const Vector2& lhr, const float rhv)
-	//{
-	//	Vector2 ret;
-	//	ret.x = lhr.x * rhv;
-	//	ret.y = lhr.y * rhv;
-
-	//	return ret;
-	//}
-
-	//static inline Vector2 operator / (const Vector2& lhr, const float rhv)
-	//{
-	//	Vector2 ret;
-	//	ret.x = lhr.x / rhv;
-	//	ret.y = lhr.y / rhv;
-
-	//	return ret;
-	//}
-
-
 	class Easing
 	{
 	public:

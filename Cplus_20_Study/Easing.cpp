@@ -19,7 +19,6 @@ int main()
 		std::this_thread::sleep_for(std::chrono::seconds(1/10));
 	};
 
-	//Vector2 re = myMath::Easing::Liner(1, 2, Vector2(1, 2), Vector2(3, 4));
 
 	return 0;
 }
