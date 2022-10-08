@@ -1,5 +1,5 @@
 #pragma once
-#include "PlayerFSM.h"
+#include "StateMachine.h"
 
 class Player
 {
@@ -8,6 +8,10 @@ public:
 	void Update();
 	void End();
 
+	StateMachine& GetStateMachine() noexcept { return m_stateMachine; }
+
 private:
-	PlayerFSM m_playerFSM;
+	friend class PlayerState;
+
+	StateMachine m_stateMachine;
 };

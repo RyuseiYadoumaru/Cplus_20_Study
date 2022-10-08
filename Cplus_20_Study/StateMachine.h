@@ -1,7 +1,7 @@
 //*****************************************************************************
 //* @file   Statemachine.h
 //* @brief  ステートマシーンの基底クラス
-//* @note   FSM；(FiniteStateMachine) : 有限状態機械
+//* @note   FSM (FiniteStateMachine) : 有限状態機械
 //* 
 //* @author YadoumaruRyusei
 //* @date   October 2022
@@ -12,11 +12,10 @@
 #include <memory>
 #include <iostream>
 
-template<class FSMType>
 class StateMachine
 {
 protected:
-	using StatePtr = std::shared_ptr<StateBase<FSMType>>;
+	using StatePtr = std::shared_ptr<StateBase>;
 	using StateType = std::string;
 	using StateContainer = std::unordered_map<StateType, StatePtr>;
 
@@ -87,11 +86,8 @@ public:
 	}
 
 public:
-	// 初期化
-	virtual void Initialize() = 0;
-
 	// 更新
-	virtual void Update()
+	void StateUpdate()
 	{
 		m_currentState->Update();
 	}

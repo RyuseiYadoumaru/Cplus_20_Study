@@ -12,8 +12,6 @@
 BYTE g_byte[256] = {0};
 int i = 0;
 
-
-
 int main()
 {
 	Player player;

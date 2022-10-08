@@ -26,6 +26,9 @@
     <Filter Include="Study\Easing">
       <UniqueIdentifier>{949ff6f0-33bc-4498-a9a1-a5412364f971}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Algorithm\StateMachine\Player">
+      <UniqueIdentifier>{65798975-da98-4992-aa1c-8ab6d127ca34}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Concept.cpp">
@@ -109,6 +112,12 @@
     <ClCompile Include="Easing.cpp">
       <Filter>Study\Easing</Filter>
     </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Algorithm\StateMachine\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerState.cpp">
+      <Filter>Algorithm\StateMachine\Player</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Component.h">
@@ -128,6 +137,12 @@
     </ClInclude>
     <ClInclude Include="Easing.h">
       <Filter>Study\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Algorithm\StateMachine\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerState.h">
+      <Filter>Algorithm\StateMachine\Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
